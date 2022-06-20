@@ -41,6 +41,7 @@ svg{
   background-color: rgba(0,0,0,0.8);
   z-index:500;
   display:none;
+  overflow: auto;
 }
 .box, .text{cursor:pointer;}
 /*
@@ -90,10 +91,11 @@ svg{
 .mapContent>ul{
   width:100%;
   max-width:800px;
-  height: 150vh;
+  height: 100%;
   background-color: #fff;
   margin: 0 auto;
   text-align: center;
+  padding-bottom:30px;
 }
 .mapContent>ul>li{
   display:none;
