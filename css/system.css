@@ -5,15 +5,16 @@
 /**************기본 세팅****************/
 
 h1{
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.15rem;
   color: #777;
+  margin-bottom: 15px;
 }
 h2{
   width: 100%;
   margin:0 auto;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 700; 
   color: #aaa;
   letter-spacing: 5px;
@@ -27,45 +28,218 @@ section{
 
 /*************************국립공원 메뉴***********************/
 
-#facilityArea{
-  width: 95%;
-  max-width: 800px;
-  height: 30px;
-  margin:30px auto;
-  background-color: #fff;
-  border-radius: 15px 15px 15px 15px ;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  cursor: pointer;
+#facility{
+  position:relative;
+  width:95%;
+  max-width:800px;
+  height:100%;
+  max-height: 100px;
+  margin:0 auto;
+  text-align:center;
+  margin:10px auto;
 }
-#facilityArea>.facility{
+#facility .chooseFacility{
   position: relative;
-  top:5px;
-  left:50%;
-  transform:translateX(-50%);
-  width:100%;
-  height: 50px;
-  z-index: 300;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  z-index: 500;
 }
-#facilityArea>.facility>ul{
-  position:absolute;
-  top:24px;
-  width:100%;
-  margin: 0 auto;
+#facility .chooseFacility p{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 14px;
+  font-weight: 0.85rem;
+  color: #aaa;
+}
+#facility .chooseFacility .facilityList{
+  position: absolute;
+  width: 100%;
+  top:100%;
+  left: 50%;
+  transform: translateX(-50%); 
   background-color: #fff;
-  box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
-  z-index: 200;
+  box-shadow:0px 20px 10px rgba(0,0,0,0.2);
+  border-radius: 0 0 15px 15px;
   display: none;
 }
-#facilityArea>.facility>ul>li{
-  font-size: 16px;
-  font-size: 1rem;
+  #facility .chooseFacility .facilityList li{
+  font-size: 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
   color: #777;
-  padding: 3%;
-  letter-spacing: 10px;
+  padding: 10px 0;
+  letter-spacing: 14px;
 }
 
 /****************************달력 메뉴******************************/
 
+
+/*************************달력***************************/
+
+/*달력 전체 세팅*/
+
+#sysCal{
+  position:relative;
+  width:95%;
+  max-width:800px;
+  height:auto;
+  margin:30px auto;
+  padding:10px 0;
+  text-align:center;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+/*달력 입실일*/
+#sysCal .enter p{
+  font-size:16px;
+  font-size:1rem;
+  color:#777;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+.sysMonth{
+  width:100%;
+  height:30px;
+  margin:0 auto 30px;
+  line-height: 30px;
+}
+.sysMonth span{
+  display:inline-block;
+  vertical-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.leftBtn{
+  width: 10px;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 14px solid #ccc;
+  border-bottom: 7px solid transparent;
+  border-radius:2px;
+  margin-right:10px;
+  cursor: pointer;
+}
+.rightBtn{
+  width: 10px;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 14px solid #ccc;
+  border-bottom: 7px solid transparent;
+  border-radius:2px;
+  margin-left:10px;
+  cursor: pointer;
+}
+
+
+/*1주일*/
+
+.sysWeek ul{
+  display:grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-content:space-around;
+  width:100%;
+  max-width:800px;
+  margin:0 auto;
+}
+.sysWeek ul li{
+  width:100%;
+  max-width:30px;
+  margin:0 auto;
+  height:28px;
+  border:1px solid #fff;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+  border-radius:10px;
+}
+.sysWeek ul li p{
+  line-height:30px;
+  font-weight:900;
+}
+.sysWeek>ul>li:first-child>p{color:rgb(160, 9, 9)!important;}
+
+/*달력 날짜 부분*/
+
+.sysDay ul{
+  display:grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-content:space-around;
+  width:100%;
+  max-width:800px;
+  margin:0 auto;
+}
+.sysDay ul li{
+  width:100%;
+  max-width:30px;
+  margin:30px auto;
+  height:30px;
+  line-height: 30px;
+  border:1px solid #fff;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+  border-radius:10px;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #777;
+
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+}
+.sysDay>ul>li:first-child p{
+  color:rgb(160, 9, 9)
+}
+.sunDis{
+  color:royalblue;
+}
+
+/*텍스트 부분*/
+
+.chooseDay{
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.chooseDay>li{
+  margin: 10px 0;
+  font-size:14px;
+  font-size:0.85rem;
+  font-weight:700;
+  color: #777;
+}
+.chooseDay>li>span{
+  font-size:14px;
+  font-size:0.85rem;
+  font-weight:700;
+  color:#333;
+}
+
+
+
+.sysBtn{
+  width: 15%;
+  height: 30px;
+  margin: 10px;
+  border:transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 0.85rem;
+  color: #777;
+  cursor:pointer;
+}
+/* 
 #calenderArea{
   width:95%;
   max-width: 800px;
@@ -85,7 +259,7 @@ section{
   margin: 10px auto;
 }
 
-/*왼쪽 화살표*/
+왼쪽 화살표
 #calenderArea>.expMon>h4>.leftBtn{
   display: inline-block;
   margin-right: 3%;
@@ -96,7 +270,7 @@ section{
   border-bottom: 8px solid transparent;
   border-radius: 2px;
 }
-/*오른쪽 화살표*/
+오른쪽 화살표
 #calenderArea>.expMon>h4>.rightBtn{
   display: inline-block;
   margin-left: 3%;
@@ -112,7 +286,7 @@ section{
   grid-template-columns: repeat(1fr, 7);
   grid-template-rows: repeat(1fr, 6);
 }
-
+ */
 
 
 #calenderArea>.expMon>.applyBtn{

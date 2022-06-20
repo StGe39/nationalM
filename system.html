@@ -42,10 +42,10 @@
 
 <!--------------------------국립공원 선택 메뉴------------  -->
 
-      <div id="facilityArea">
-        <div class="facility">
+      <div id="facility">
+        <div class="chooseFacility">
           <h2>국립공원 선택</h2>
-          <ul>
+          <ul class="facilityList">
             <li>북한산</li>
             <li>설악산</li>
             <li>오대산</li>
@@ -72,7 +72,7 @@
 
 <!--------------------------달력------------------------>   
 
-      <div id="calenderArea">
+      <!-- <div id="calenderArea">
         <h3>봉사일정</h3>
         <div class="expMon">
           <h4>
@@ -80,6 +80,42 @@
           </h4>
           <ul class="calenderDate"></ul>
           <button class="applyBtn">신청하기</button>
+        </div>
+      </div> -->
+
+      <div id="sysCal">
+        <div class="enter">
+          <p>봉사 신청 일</p>
+          <div class="sysMonth">
+            <span class="leftBtn"></span>
+            <span class="monthNumber"></span>
+            <span>월</span>
+            <span class="rightBtn"></span>
+          </div>
+          <div class="sysWeek">
+            <ul>
+              <li><p>일</p></li>
+              <li><p>월</p></li>
+              <li><p>화</p></li>
+              <li><p>수</p></li>
+              <li><p>목</p></li>
+              <li><p>금</p></li>
+              <li><p>토</p></li>
+            </u>
+          </div>
+          <div class="sysDay">
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="sysText">
+          <ul class="chooseDay">
+            <li>선택일자 : <span></span></li>
+            <li>선택장소 : <span></span></li>
+          </ul>
+          <input type="button" value="신청하기"class="sysBtn"></input>
         </div>
       </div>
 
@@ -124,6 +160,6 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/index.js"></script>
-  <script src="calender.js"></script>
+  <script src="js/sysCal.js"></script>
 </body>
 </html>
