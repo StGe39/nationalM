@@ -1,0 +1,194 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+
+section{
+  width:100%;
+  max-width: 1200px;
+  margin: 100px auto 0;}
+
+
+/*************************Main Title****************************/
+
+#mainTitle>h1{
+  width:100%;
+  text-align:center;
+  color: #777;
+  font-size:24px;
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+/************************content Menu*************************/
+
+#contentMenu{
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  margin:30px auto 0 ;
+}
+#contentMenu ul{
+  width:90%;
+  margin: 0 auto;
+  display:flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#contentMenu ul li{
+  width:23.5%;
+  margin:0 3%;
+  border-radius: 15px;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.2);}
+#contentMenu ul li a{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#contentMenu ul li a img{
+  width:80%;
+  display:inline-block;
+}
+#contentMenu ul li a span{
+  font-size:14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #777;
+  padding-bottom: 10px;
+}
+
+/****************swipe gallery**************/
+
+#swipeGallery{
+  width:100%;
+  max-width: 800px;
+  margin:30px auto 0;
+
+}
+#swipeGallery ul{
+  width:90%;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+#swipeGallery ul li{
+  width: 30%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align:center;
+  margin: 0 5%;
+  overflow: hidden;
+}
+#swipeGallery ul li:not(:nth-child(3)) p, #swipeGallery ul li:not(:nth-child(3)) h2{
+  display:none;
+}
+#swipeGallery ul li:nth-child(3){
+  width:45%;
+}
+#swipeGallery ul li:not(:nth-child(3)){
+  filter:blur(1.5px);
+}
+#swipeGallery ul li:first-child, #swipeGallery ul li:last-child{
+  display:none;
+}
+#swipeGallery ul li img{
+  width:100%;
+  border-radius: 15px;
+  margin-top:20px;
+  
+}
+#swipeGallery ul li h2{
+  margin-top: 10px;
+  color:#333;
+  font-size: 14px;
+  font-size: 0.88rem;
+  word-spacing: -3px;
+}
+#swipeGallery ul li p{
+  margin: 10px 0;
+  color:#555;
+  font-size:14px;
+  font-size: 0.88rem;
+}
+
+
+/**********************************pop Gallery******************/
+#popGallery{
+  position: relative;
+  width: 100%;
+  max-width:800px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+#popGallery .galleryReview{width:100%;}
+#popGallery .galleryReview img{cursor: pointer;}
+#popGallery .galleryReview h3{
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+#popGallery .galleryReview ul li{
+  width:90%;
+  margin: 30px auto 0;
+  padding: 2% 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+#popGallery .galleryReview ul li img{
+  width:95%;
+  border-radius: 10px;
+}
+
+/*popup Image part*/
+
+#popGallery .popupArea{
+  position:fixed;
+  width:100%;
+  max-width: 800px;
+/*   margin:0 auto; */
+  height: 100vh;
+  background: rgba(0,0,0,1);
+  top:0px;
+  display:none;
+
+}
+#popGallery .popupArea .popImg li{
+  width:100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:none;
+  color:#fff;
+}
+.popImg li img{
+  display: inline-block;
+  width:100%;
+  margin: 0 auto;
+}
+
+.popImg li h2{
+  font-size:18px;
+  font-size:1.13rem;
+  margin:10px auto;
+  word-spacing: 2px;
+}
+.popImg li p{
+  font-size: 14px;
+  font-size: 0.88rem;
+  margin: 10px auto;
+  line-height: 20px;
+  word-spacing:2px;
+  font-weight: 500;
+}
+

@@ -1,0 +1,117 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+body{
+  position:relative;
+}
+
+section{
+  width:90%;
+  max-width:800px;
+  margin:0 auto;
+  text-align:center;
+
+}
+h1{
+  color:#777;
+  font-size:18px;
+  font-size: 1.13rem;
+  margin:80px auto 30px;
+}
+#photoArea{
+  width:95%;
+  max-width:800px;
+  margin:0 auto;
+  border-radius:15px;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+#photoArea ul{
+  width:90%;
+  max-width:800px;
+  margin:5% auto;
+
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-gap:5%;  
+}
+#photoArea ul li{
+  width:100%;
+  margin:10px;
+  overflow:hidden;
+  border-radius:10px;
+  margin:0 auto;
+}
+#photoArea ul li img{
+  display:block;
+  width:100%;
+}
+#photoPop{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+#photoPop .popupBox{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background-color:rgba(0,0,0,0.8);
+  top:0px;
+  left:0px;
+  z-index:1000;
+}
+
+#photoPop ul li{
+  position:fixed;
+  width:100%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:1100;
+  display:none;
+  margin:0 auto;
+}
+#photoPop>ul>li>img{
+  max-width:100%;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+  
+}
+#photoBtn{
+  width:100%;
+  max-width:250px;
+  margin:0 auto;
+  text-align:center;
+}
+#photoBtn ul{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  justify-content: center;
+  margin:30px 0;
+}
+#photoBtn ul li{
+  margin:0 auto;
+  width:100%;
+  max-width:30px;
+  line-height:20px;
+  border-radius:5px;
+  box-shadow:0px 0px 7px rgba(0,0,0,0.2);
+}
+
+.popupBtn>div>span{
+  position:fixed;
+  z-index:1500;
+}
+.closeBtn>span:first-child{
+  top:20px;
+  right:20px;
+  font-size:44px;
+  color:#fff;
+  
+}

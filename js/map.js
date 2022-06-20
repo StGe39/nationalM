@@ -1,0 +1,62 @@
+$(document).ready(
+  function(){
+
+    $(".gyunggi").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".gyunggiMountain").css({display:"block"},1000);
+      }
+    )
+    $(".gangwon").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".gangwonMountain").css({display:"block"},1000);
+      }
+    )
+    $(".gyungbuk").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".gyungbukMountain").css({display:"block"},1000);
+      }
+    )
+    $(".chungbuk").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".chungbukMountain").css({display:"block"},1000);
+      }
+    )
+    $(".chungnam").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".chungnamMountain").css({display:"block"},1000);
+      }
+    )
+    $(".junnam").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".junnamMountain").css({display:"block"},1000);
+      }
+    )
+    $(".junbuk").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".junbukMountain").css({display:"block"},1000);
+      }
+    )
+    $(".gyungnam").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".gyungnamMountain").css({display:"block"},1000);
+      }
+    )
+    $(".jeju").click(
+      function(){
+        $(".mountain").css({display:"none"},1000);
+        $(".jejuMountain").css({display:"block"},1000);
+      }
+    )
+
+    
+
+  }
+)
