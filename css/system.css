@@ -227,17 +227,17 @@ section{
 
 
 .sysBtn{
-  width: 15%;
   height: 30px;
   margin: 10px;
   border:transparent;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  background-color: #fff;
+  
   font-size: 14px;
   font-weight: 0.85rem;
   color: #777;
   cursor:pointer;
+  padding:0 10px;
 }
 /* 
 #calenderArea{
