@@ -248,7 +248,7 @@ section{
 
 
 
-.regBtn{
+.regText>input{
   height: 30px;
   margin: 10px;
   border:transparent;
