@@ -18,10 +18,15 @@ section{
 }
 
 #visual{
-  width: 100%;
-  max-width: 800px;
   height: auto;
   margin-top: 70px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+
+}
+#visual img{
+  width:100%;
 }
 
 #mainContentMenu{
