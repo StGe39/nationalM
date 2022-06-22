@@ -1,22 +1,38 @@
 $("document").ready(function(){
-  let vImg = $("#visual img").index();
-  let vImg_l = $(vImg).length;
+  let visual = $(".visualArea");
+  let vImg = $("#visual img");
   //visual 자동 슬라이드
-
+  let i = 1
   function autoImg(){
     
-    //인덱스 필요
+    const vImgIdx = vImg.index();
+    const vImg_l = $(vImg).length;
+    const vImg_w = $(vImg).width();
     
+    //인덱스 필요
+    $(vImg).stop(false,false).animate({right:vImg_w*i});
+    i++;
+    if(i >= vImg_l){
+      i = 0;
+    }
     //파일의 길이 필요
     
     console.log(vImg);
+    console.log(vImgIdx)
     console.log(vImg_l);
+    console.log(vImg_w);
   }
     
   
-  autoImg();
+setInterval(autoImg,3000);
 
+  //test function
 
+  $(vImg).click(
+    function(){
+      autoImg();
+    }
+  )
 
 
   let chk = true;
