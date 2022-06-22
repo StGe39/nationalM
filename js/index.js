@@ -9,21 +9,14 @@ $("document").ready(function(){
     const vImg_l = $(vImg).length;
     const vImg_w = $(vImg).width();
     
-    //인덱스 필요
     $(vImg).stop(false,false).animate({right:vImg_w*i});
     i++;
     if(i >= vImg_l){
       i = 0;
     }
-    //파일의 길이 필요
-    
-    console.log(vImg);
-    console.log(vImgIdx)
-    console.log(vImg_l);
-    console.log(vImg_w);
   }
     
-  
+
 setInterval(autoImg,3000);
 
   //test function

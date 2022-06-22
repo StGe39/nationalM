@@ -19,6 +19,7 @@ section{
 
 #visual{
   width: 100%;
+  margin: 0 auto;
   max-width: 800px;
   height: auto;
   margin-top: 70px;
@@ -72,6 +73,7 @@ section{
 
 #mainText{
   width: 95%;
+  max-width: 800px;
   margin: 20px auto 0;
 
   display:flex;
